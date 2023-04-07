@@ -22,8 +22,7 @@ export default function Decision() {
         </div>
     ) : 
     (
-      <div className="p-10 h-[100vh] w-[100vw] bg-gray-300">
-        <div>
+      <div className="p-10 min-h-full min-w-full bg-gray-300">
           <p className="mb-8">April 7, 2023</p>
           <p className="mb-4">Dear Mama, Baba, and Bebe,</p>
           <p>After much research and deliberation, the university I have chosen to commit to is the <strong>University of California Berkeley</strong>. The choice was not easy, but I do believe that if the multiverse did exist, the many other versions of me would have chosen the same because of these 8 reasons:</p>
@@ -40,7 +39,6 @@ export default function Decision() {
           <p className="mb-8">Thank you for trusting me with my decision. I look forward to the endless days of grabbing boba with you all every single weekend.</p>
           <p>Sincerely,</p>
           <p>Kari Lee</p>
-        </div>
       </div>
       
     )
