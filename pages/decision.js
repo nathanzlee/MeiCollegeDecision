@@ -11,9 +11,9 @@ export default function Decision() {
     const deadline = new Date(2023, 3, 7, 19, 0, 0, 0)
     const now = new Date()
 
-    // if (now < deadline) {
-    //     return null 
-    // }
+    if (now < deadline) {
+        return null 
+    }
 
     return loading ? 
     (
