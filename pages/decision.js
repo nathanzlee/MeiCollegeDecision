@@ -17,12 +17,12 @@ export default function Decision() {
 
     return loading ? 
     (
-        <div className="-10 h-[100vh] bg-gray-300 flex flex-col justify-center items-center">
+        <div className="-10 h-[100vh] w-[100vw] bg-gray-300 flex flex-col justify-center items-center overflow-hidden">
             <h1 className="text-gray-500 text-3xl">Loading...</h1>
         </div>
     ) : 
     (
-      <div className="p-10 h-[100vh] bg-gray-300">
+      <div className="p-10 h-[100vh] w-[100vw] bg-gray-300 overflow-hidden">
         <div>
           <p className="mb-8">April 7, 2023</p>
           <p className="mb-4">Dear Mama, Baba, and Bebe,</p>
