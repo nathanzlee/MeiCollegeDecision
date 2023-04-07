@@ -41,16 +41,6 @@ export default function Header() {
                 src="/cmu2.png"
                 alt="Your Company"
             />
-            <img
-                className="block h-[80px] w-auto"
-                src="/cal.png"
-                alt="Your Company"
-            />
-            <img
-                className="block h-[80px] w-auto"
-                src="/cmu2.png"
-                alt="Your Company"
-            />
         </div>
     )
 }

@@ -11,18 +11,18 @@ export default function Decision() {
     const deadline = new Date(2023, 3, 7, 19, 0, 0, 0)
     const now = new Date()
 
-    if (now < deadline) {
-        return null 
-    }
+    // if (now < deadline) {
+    //     return null 
+    // }
 
     return loading ? 
     (
-        <div className="-10 h-[100vh] w-[100vw] bg-gray-300 flex flex-col justify-center items-center overflow-hidden">
+        <div className="-10 h-[100vh] w-[100vw] bg-gray-300 flex flex-col justify-center items-center">
             <h1 className="text-gray-500 text-3xl">Loading...</h1>
         </div>
     ) : 
     (
-      <div className="p-10 h-[100vh] w-[100vw] bg-gray-300 overflow-hidden">
+      <div className="p-10 h-[100vh] w-[100vw] bg-gray-300">
         <div>
           <p className="mb-8">April 7, 2023</p>
           <p className="mb-4">Dear Mama, Baba, and Bebe,</p>
