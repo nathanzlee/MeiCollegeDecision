@@ -1,7 +1,9 @@
 import Header from '../components/header'
 
 export default function Home() {
-  return (
+  const deadline = new Date(2023, 3, 7, 19, 0, 0, 0)
+  const now = new Date()
+  return (now >= deadline) ? (
     <div>
       <Header />
       <div className="p-10 h-[100vh] bg-gray-300">
@@ -11,6 +13,14 @@ export default function Home() {
       </div>
     </div>
     
+  ) : (
+    <div>
+      <Header />
+      <div className="p-10 h-[100vh] bg-gray-300">
+        <h1 className="text-3xl mb-8">Status Update</h1>
+        <p className="mb-8">Please check for updates at 7pm PST April 7, 2023.</p>
+      </div>
+    </div>
   )
 }
 

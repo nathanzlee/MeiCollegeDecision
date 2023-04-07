@@ -1,12 +1,19 @@
 import { useState, useEffect } from 'react'
 
 export default function Decision() {
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
         setLoading(true)
         setTimeout(() => {setLoading(false)}, 5000)
     }, [])
+
+    const deadline = new Date(2023, 3, 7, 19, 0, 0, 0)
+    const now = new Date()
+
+    if (now < deadline) {
+        return null 
+    }
 
     return loading ? 
     (
